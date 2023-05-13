@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header-border">
-      <div class="container header-section">
-        <nav class="header-navigation">
+    <header class="header">
+      <div class="container header__section">
+        <nav class="header__navigation">
           <a
             class="logo"
             href="index.html"
@@ -34,25 +34,35 @@
             Web<span>Studio</span>
           </a>
           <ul class="menu">
-            <li><a class="bordered active" href="index.html">Agencja</a></li>
-            <li>
-              <a class="bordered" href="portfolio.html">Portfolio</a>
+            <li class="menu__item">
+              <a
+                class="menu__link menu--bordered menu--active"
+                href="index.html"
+                >Agencja</a
+              >
             </li>
-            <li><a class="bordered" href="index.html">Kontakt</a></li>
+            <li class="menu__item">
+              <a class="menu__link menu--bordered" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu--bordered" href="index.html">Kontakt</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts">
           <li>
-            <a class="contacts-link" href="mailto:info@devstudio.com">
-              <svg width="16px" height="12px">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16px" height="12px">
                 <use href="images/icons.svg#icon-envelope-1"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="contacts-link" href="tel:+1212-772-4150">
-              <svg width="10" height="16px">
+            <a class="contacts__link" href="tel:+1212-772-4150">
+              <svg class="contacts__icon" width="10" height="16px">
                 <use href="images/icons.svg#icon-smartphone-1"></use>
               </svg>
               ++1 212-772-4150</a

@@ -39,8 +39,8 @@ li {
 }
 .menu,
 .contacts,
-nav,
-.header-section,
+.header__navigation,
+.header__section,
 .advantages,
 .OurService__list,
 .ourTeam__list,
@@ -48,16 +48,16 @@ nav,
   display: flex;
   justify-content: space-between;
 }
-.header-section {
+.header__section {
   padding-top: 24px;
   padding-bottom: 25px;
   justify-content: space-between;
   align-items: center;
 }
-.header-border {
+.header {
   border-bottom: 1px solid #ececec;
 }
-.header-navigation {
+.header__navigation {
   display: flex;
   align-items: center;
 }
@@ -79,26 +79,27 @@ nav,
 .menu {
   column-gap: 46px;
 }
-.menu li {
+.menu__item {
   position: relative;
 }
-.menu a {
+.menu__link {
   display: inline-block;
   color: var(--color-secondary);
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu a,
-.contacts a {
+.menu__link,
+.contacts__link {
   font-family: var(--font-primary);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-.active::after,
-.bordered:hover::after {
+.menu--active::after,
+.menu--bordered:hover::after,
+.menu--bordered:focus::after {
   position: absolute;
   right: 0;
   margin-top: 37px;
@@ -112,14 +113,14 @@ nav,
 }
 .menu a:focus,
 .menu a:hover,
-.contacts-link:focus,
-.contacts-link:hover,
+.contacts__link:focus,
+.contacts__link:hover,
 .footer-contacts a:focus,
 .footer-contacts a:hover {
   color: var(--brand-color);
   fill: var(--brand-color);
 }
-.contacts-link {
+.contacts__link {
   fill: var(--paragraf-font-color);
   color: var(--paragraf-font-color);
   display: flex;
@@ -128,7 +129,7 @@ nav,
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-link svg {
+.contacts__icon {
   margin-right: 10px;
 }
 .introduction {
