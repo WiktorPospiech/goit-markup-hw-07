@@ -43,7 +43,7 @@ nav,
 .header-section,
 .advantages,
 .example-list,
-.aboutus-list,
+.ourTeam__list,
 .portfolio-categories {
   display: flex;
   justify-content: space-between;
@@ -172,7 +172,7 @@ nav,
   padding: 10px 41px 10px 42px;
 }
 .advantages > li:not(:last-child),
-.aboutus-list > li:not(:last-child),
+.ourTeam__list > li:not(:last-child),
 .example-list > li:not(:last-child) {
   margin-right: 30px;
 }
@@ -213,8 +213,7 @@ nav,
   color: rgba(255, 255, 255, 1);
 }
 .example-header,
-.aboutus-header,
-.clients-header {
+.section__header {
   text-align: center;
   color: var(--color-secondary);
   font-weight: 700;
@@ -222,38 +221,38 @@ nav,
   line-height: 1.2;
   padding-bottom: 50px;
 }
-.aboutus-list {
+.ourTeam__list {
   text-align: center;
 }
-.aboutus-list > li {
+.ourTeam__item {
   padding-bottom: 30px;
   background-color: var(--backrground-second-color);
   box-shadow: 0 2px 1px 0 #00000033, 0 1px 1px 0 #00000024,
     0 1px 3px 0 #0000001f;
 }
-.aboutus {
+.ourTeam {
   background: #f5f4fa;
 }
-.aboutus-list h3 {
+.ourTeam__header {
   font-weight: 500;
   color: var(--color-secondary);
   padding-top: 30px;
   padding-bottom: 10px;
 }
-.aboutus-list p,
-.aboutus-list h3 {
+.ourTeam__p,
+.ourTeam__header {
   font-size: var(--paragraf-font-size);
   line-height: 1.2;
 }
-.index-socialmedia-icons {
+.ourTeam__socialmediaIcons {
   margin-top: 16px;
 }
-.index-socialmedia-icons ul {
+.ourTeam__socialmediaIcons__list {
   display: flex;
   column-gap: 10px;
   justify-content: center;
 }
-.index-socialmedia-icons li {
+.ourTeam__socialmediaIcons__item {
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -263,18 +262,18 @@ nav,
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.index-socialmedia-icons li:hover,
-.index-socialmedia-icons li:focus {
+.ourTeam__socialmediaIcons__item:hover,
+.ourTeam__socialmediaIcons__item:focus {
   background-color: var(--brand-color);
   fill: var(--backrground-second-color);
 }
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
   fill: #afb1b8;
   gap: 30px;
 }
-.clients-list li {
+.clients__icon {
   border: 1px solid #afb1b8;
   border-radius: 4%;
   padding: 17.71px 32px 14.25px 32px;
@@ -282,8 +281,8 @@ nav,
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list li:hover,
-.clients-list li:focus {
+.clients__icon:hover,
+.clients__icon:focus {
   fill: var(--brand-color);
   border: 1px solid var(--brand-color);
 }

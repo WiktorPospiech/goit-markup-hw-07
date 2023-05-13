@@ -1,0 +1,25 @@
+@import "./components/_clients.scss";
+@import "./components/_baseElements.scss";
+@import "./utils/_variables.scss";
+@import "./components/ourTeam";
+
+* {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+body {
+  font-family: $fontPrimary;
+  letter-spacing: 0.03em;
+  color: $paragrafColor;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
