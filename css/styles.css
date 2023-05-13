@@ -42,7 +42,7 @@ li {
 nav,
 .header-section,
 .advantages,
-.example-list,
+.OurService__list,
 .ourTeam__list,
 .portfolio-categories {
   display: flex;
@@ -173,12 +173,12 @@ nav,
 }
 .advantages > li:not(:last-child),
 .ourTeam__list > li:not(:last-child),
-.example-list > li:not(:last-child) {
+.OurService__list > li:not(:last-child) {
   margin-right: 30px;
 }
 .advantages h3,
 .footer-socialmedia-icons h3,
-.label,
+.OurService__p,
 .newsletter-wrapper h3 {
   color: var(--color-secondary);
   font-weight: 700;
@@ -194,16 +194,16 @@ nav,
   padding: 25px 100px;
   margin-bottom: 30px;
 }
-.example-section {
+.section--NOpadding {
   padding-top: 0;
 }
-.example-list img {
+.OurService__img {
   display: block;
 }
-.example-list li {
+.OurService__item {
   position: relative;
 }
-.label {
+.OurService__p {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -212,7 +212,6 @@ nav,
   background: rgba(47, 48, 58, 0.8);
   color: rgba(255, 255, 255, 1);
 }
-.example-header,
 .section__header {
   text-align: center;
   color: var(--color-secondary);
@@ -441,7 +440,7 @@ address {
 .footer-socialmedia-icons h3 {
   color: var(--backrground-second-color);
 }
-label {
+OurService__p {
   display: flex;
   flex-direction: column;
 }

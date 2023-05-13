@@ -1,0 +1,30 @@
+@import "../utils/variables";
+
+.OurService__list {
+  display: flex;
+  justify-content: space-between;
+}
+.OurService__p {
+  color: $fontMAINcolor;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.OurService__img {
+  display: block;
+}
+.OurService__item {
+  position: relative;
+}
+.OurService__p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+  color: rgba(255, 255, 255, 1);
+}
