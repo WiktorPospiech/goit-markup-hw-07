@@ -47,3 +47,6 @@
     fill: $backgroundThird;
   }
 }
+.ourTeam__list > li:not(:last-child) {
+  margin-right: 30px;
+}

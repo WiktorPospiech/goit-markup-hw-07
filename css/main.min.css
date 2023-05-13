@@ -102,6 +102,10 @@
   fill: #fff;
 }
 
+.ourTeam__list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .OurService__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +146,73 @@
   text-align: center;
   background: rgba(47, 48, 58, 0.8);
   color: rgb(255, 255, 255);
+}
+
+.OurService__list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.advantages__header {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  padding-bottom: 10px;
+}
+.advantages__p {
+  line-height: 1.7;
+}
+
+.advantages > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.introduction {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #2f303a;
+  border: 1px solid #000;
+}
+.introduction__img {
+  margin: auto;
+  background-image: url(../images/sloganBackground.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: url(../images/sloganBackground.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+}
+.introduction__wrapper {
+  padding: 200px 452px;
+  text-align: center;
+}
+.introduction__slogan {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.introduction__button {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background-color: #2196f3;
+  padding: 10px 41px 10px 42px;
 }
 
 * {
