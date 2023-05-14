@@ -423,64 +423,64 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" data-modal-close type="button">
+        <button class="modal__closing" data-modal-close type="button">
           <svg width="18px" height="18px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <form name="order_the_service">
-          <h3>Zostaw swoje dane w formularzu poniżej</h3>
-          <label>
+          <h3 class="modal__header">Zostaw swoje dane w formularzu poniżej</h3>
+          <label class="modal__label">
             Imie
-            <input class="order-input" type="name" name="username" />
-            <svg class="modal-icons" height="12px" width="12px">
+            <input class="modal__input" type="name" name="username" />
+            <svg class="modal__icons" height="12px" width="12px">
               <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
             </svg>
           </label>
-          <label>
+          <label class="modal__label">
             Telefon
-            <input class="order-input" type="tel" name="phone_number" />
-            <svg class="modal-icons" height="13px" width="13px">
+            <input class="modal__input" type="tel" name="phone_number" />
+            <svg class="modal__icons" height="13px" width="13px">
               <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
             </svg>
           </label>
-          <label>
+          <label class="modal__label">
             Email
-            <input class="order-input" type="email" name="email" />
-            <svg class="modal-icons" height="15px" width="12px">
+            <input class="modal__input" type="email" name="email" />
+            <svg class="modal__icons" height="15px" width="12px">
               <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
             </svg>
           </label>
-          <label>
+          <label class="modal__label">
             Komentarz
             <textarea
-              class="comment"
+              class="modal__comment modal__textarea"
               name="feedback"
               rows="6"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
 
-          <div class="checkbox-control">
+          <div class="modal__checkbox">
             <input
               type="checkbox"
               name="check"
               id="check"
               value="1"
-              class="checkbox-input"
+              class="modal__input--checkbox"
             />
-            <label for="check" class="termANDcondition">
+            <label for="check" class="modal__label modal__agreement">
               <svg width="11px" height="8px">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </label>
             <p>
-              Oświadczam iż akceptuję <a href="">Regulamin</a> i
-              <a href="">Politykę Prywatności.</a>
+              Oświadczam iż akceptuję
+              <a class="agreement__link" href="">Regulamin</a> i
+              <a class="agreement__link" href="">Politykę Prywatności.</a>
             </p>
           </div>
-
-          <button class="modal-button" type="submit">Wyślij</button>
+          <button class="modal__submit" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
