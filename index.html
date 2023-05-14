@@ -19,7 +19,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -31,7 +32,7 @@
             target="_blank"
             rel="noreferrer noopener"
           >
-            Web<span>Studio</span>
+            Web<span class="logo__span">Studio</span>
           </a>
           <ul class="menu">
             <li class="menu__item">
@@ -86,7 +87,7 @@
         <div class="container">
           <ul class="advantages">
             <li class="advantages__item">
-              <svg class="top-icons" width="270px" height="120px">
+              <svg class="advantages__icon" width="270px" height="120px">
                 <use href="./images/icons.svg#icon-antenna-1-1"></use>
               </svg>
               <h3 class="advantages__header">LOREM IPSUM</h3>
@@ -96,7 +97,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <svg class="top-icons" width="270px" height="120px">
+              <svg class="advantages__icon" width="270px" height="120px">
                 <use href="./images/icons.svg#icon-clock-1-1"></use>
               </svg>
               <h3 class="advantages__header">LOREM IPSUM</h3>
@@ -106,7 +107,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <svg class="top-icons" width="270px" height="120px">
+              <svg class="advantages__icon" width="270px" height="120px">
                 <use href="./images/icons.svg#icon-diagram-1-1"></use>
               </svg>
               <h3 class="advantages__header">LOREM IPSUM</h3>
@@ -116,7 +117,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <svg class="top-icons" width="270px" height="120px">
+              <svg class="advantages__icon" width="270px" height="120px">
                 <use href="./images/icons.svg#icon-astronaut-1-1"></use>
               </svg>
               <h3 class="advantages__header">LOREM IPSUM</h3>
@@ -346,60 +347,73 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container footer-wrapper">
-        <div class="page-footer">
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__contacts">
           <a
-            class="footer-logo"
+            class="logo"
             href="index.html"
             target="_blank"
             rel="noreferrer noopener"
           >
-            Web<span>Studio</span>
+            Web<span class="logo__span--footer">Studio</span>
           </a>
-          <address>
-            <ul class="footer-list">
-              <li class="footer-adres">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li class="footer-contacts">
-                <a href="tel:+1212-772-4150">++1 212-772-4150</a>
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li>
+                <a class="address__link" href="tel:+1212-772-4150"
+                  >++1 212-772-4150</a
+                >
               </li>
-              <li class="footer-contacts">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="contacts">
+                <a class="address__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-socialmedia-icons">
-          <h3>DOŁĄCZ DO NAS</h3>
-          <ul>
-            <li>
+        <div class="footer__socialmedia">
+          <h3 class="footer__socialmedia__header">DOŁĄCZ DO NAS</h3>
+          <ul class="footer__socialmedia__list">
+            <li class="footer__socialmedia__item">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-instagram-2-1"></use>
               </svg>
             </li>
-            <li>
+            <li class="footer__socialmedia__item">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-twitter-1-1"></use>
               </svg>
             </li>
-            <li>
+            <li class="footer__socialmedia__item">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-facebook-1-1"></use>
               </svg>
             </li>
-            <li>
+            <li class="footer__socialmedia__item">
               <svg width="20px" height="20px">
                 <use href="./images/icons.svg#icon-linkedin-1-1"></use>
               </svg>
             </li>
           </ul>
         </div>
-        <div class="newsletter-wrapper">
-          <h3>ZAPISZ SIĘ DO NEWSLETTERA</h3>
-          <form class="newsletter-subscription" name="sign_up_for_newsletter">
-            <input type="email" name="email" placeholder="E-mail" />
-            <button class="submit-button" type="submit">
-              Zapisz się<svg height="24px" width="24px">
+        <div class="newsletter">
+          <h3 class="newsletter__header">ZAPISZ SIĘ DO NEWSLETTERA</h3>
+          <form class="newsletter__subscription" name="sign_up_for_newsletter">
+            <input
+              class="newsletter__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="newsletter__button" type="submit">
+              Zapisz się<svg
+                class="newsletter__icon"
+                height="24px"
+                width="24px"
+              >
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

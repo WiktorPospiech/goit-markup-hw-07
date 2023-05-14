@@ -3,7 +3,7 @@
 .header {
   border-bottom: 1px solid #ececec;
 
-  & __section {
+  &__section {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
@@ -18,15 +18,17 @@
 }
 .logo {
   margin-right: 93px;
-  font-family: var(--font-secondary);
+  font-family: $fontSecondary;
   font-weight: 700;
   font-size: 26px;
-  color: var(--brand-color);
+  color: $brandColor;
   line-height: 1.2px;
   letter-spacing: 0.03em;
-
-  &span {
+  &__span {
     color: #000;
+  }
+  &__span--footer {
+    color: #fff;
   }
 }
 
@@ -39,11 +41,11 @@
   }
   &__link {
     display: inline-block;
-    color: var(--color-secondary);
+    color: $fontMAINcolor;
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    font-family: var(--font-primary);
+    font-family: $fontPrimary;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -55,13 +57,13 @@
   display: flex;
   justify-content: space-between;
   &__link {
-    font-family: var(--font-primary);
+    font-family: $fontPrimary;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    fill: var(--paragraf-font-color);
-    color: var(--paragraf-font-color);
+    fill: $paragrafColor;
+    color: $paragrafColor;
     display: flex;
     align-items: center;
     transition-property: color, fill;
@@ -90,6 +92,6 @@
 .contacts__link:hover,
 .footer-contacts a:focus,
 .footer-contacts a:hover {
-  color: var(--brand-color);
-  fill: var(--brand-color);
+  color: $brandColor;
+  fill: $brandColor;
 }

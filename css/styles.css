@@ -190,7 +190,7 @@ li {
 .advantages__p {
   line-height: 1.7;
 }
-.top-icons {
+.advantages__icon {
   background-color: #f5f4fa;
   padding: 25px 100px;
   margin-bottom: 30px;
@@ -375,14 +375,14 @@ li {
   font-size: var(--paragraf-font-size);
   line-height: 1.9;
 }
-footer {
+.footer {
   background: var(--background-color);
 }
-.footer-wrapper {
+.footer__wrapper {
   display: flex;
   align-items: baseline;
 }
-.page-footer {
+.footer__contacts {
   padding-top: 60px;
   padding-bottom: 60px;
   margin-right: 70px;
@@ -414,17 +414,17 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-socialmedia-icons {
+.footer__socialmedia {
   padding-top: 72px;
   margin-right: 78px;
 }
-.footer-socialmedia-icons ul {
+.footer__socialmedia__list {
   display: flex;
   column-gap: 10px;
   margin-top: 10px;
   fill: var(--backrground-second-color);
 }
-.footer-socialmedia-icons li {
+.footer__socialmedia__item {
   padding: 12px;
   width: 44px;
   height: 44px;
@@ -434,25 +434,25 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-socialmedia-icons li:hover,
-.footer-socialmedia-icons li:focus {
+.footer__socialmedia__item:hover,
+.footer__socialmedia__item:focus {
   background-color: var(--brand-color);
 }
-.footer-socialmedia-icons h3 {
+.footer__socialmedia__header {
   color: var(--backrground-second-color);
 }
-OurService__p {
+.OurService__p {
   display: flex;
   flex-direction: column;
 }
-.newsletter-wrapper h3 {
+.newsletter__header {
   padding-bottom: 20px;
   color: var(--backrground-second-color);
 }
-.newsletter-subscription {
+.newsletter__subscription {
   display: flex;
 }
-.newsletter-subscription input {
+.newsletter__input {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -464,7 +464,7 @@ OurService__p {
   background-color: var(--background-color);
   width: 358px;
 }
-.submit-button {
+.newsletter__button {
   padding: 10px 28px 10px 42px;
   margin-left: 12px;
   display: flex;
@@ -478,7 +478,7 @@ OurService__p {
   box-shadow: 0px 4px 4px 0px #00000026;
   border-radius: 4px;
 }
-.submit-button svg {
+.newsletter__icon {
   margin-left: 24px;
   fill: rgba(255, 255, 255, 1);
   background-color: var(--brand-color);
