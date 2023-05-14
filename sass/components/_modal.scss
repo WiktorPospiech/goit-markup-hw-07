@@ -75,6 +75,7 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 
   &:hover,
   &:focus-within,
@@ -91,8 +92,10 @@
 }
 .modal__icons {
   position: absolute;
+  width: 18px;
+  height: 18px;
   left: 12px;
-  top: 60%;
+  top: 40%;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
