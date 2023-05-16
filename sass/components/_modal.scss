@@ -95,7 +95,7 @@
   width: 18px;
   height: 18px;
   left: 12px;
-  top: 40%;
+  top: 55%;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -153,6 +153,15 @@
   margin-right: auto;
   padding: 10px 76px;
   box-shadow: 0px 4px 4px 0px #00000026;
+  border: none;
+  font-family: $fontPrimary;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $backgroundThird;
+  background-color: $brandColor;
 }
 .agreement__link {
   color: $brandColor;
