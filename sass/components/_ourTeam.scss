@@ -1,6 +1,4 @@
-@import "../utils/variables";
-
-.ourTeam {
+.team {
   background: $backgroundSecondary;
   &__list {
     display: flex;
@@ -47,7 +45,7 @@
     background-color: $brandColor;
     fill: $backgroundThird;
   }
-}
-.ourTeam__list > li:not(:last-child) {
-  margin-right: 30px;
+  &__list > li:not(:last-child) {
+    margin-right: 30px;
+  }
 }

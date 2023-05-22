@@ -1,10 +1,8 @@
-@import "../utils/variables";
-
 .OurService__list {
   display: flex;
   justify-content: space-between;
 }
-.OurService__p {
+.OurService__text {
   color: $fontMAINcolor;
   font-weight: 700;
   font-size: 14px;
@@ -19,7 +17,7 @@
 .OurService__item {
   position: relative;
 }
-.OurService__p {
+.OurService__text {
   position: absolute;
   bottom: 0;
   width: 100%;
